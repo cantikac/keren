@@ -102,7 +102,7 @@ def menu():
 	print " [#] Welcome : \033[0;93m"+nama+"\033[0;97m"
 	
     #######print " [#] Your ID    : \033[0;93m"+id+"\033[0;97m"
-	print " [#] Your IP    : \033[0;93m"+ip+"\033[0;97m"
+	print " [#] Your IP : \033[0;93m"+ip+"\033[0;97m"
 	######print " [#] Your IP    : \033[0;93m"+prem+"\033[0;97m"
 	print " [#]─────────────────────────────────────────────\n"
 	print " [1] Crack Dari Teman / Publik"
