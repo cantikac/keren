@@ -37,25 +37,22 @@ logo = ("""
 """)
 
 def tokenz():
-	os.system('clear')
-	try:
-		token = open('login.txt','r')
-		menu() 
-	except (KeyError,IOError):
-		os.system('clear')
-		print logo
-		token = raw_input(" [+] Your Token : ")
-		try:
-			otw = requests.get('https://graph.facebook.com/me?access_token='+token)
-			a = json.loads(otw.text)
-			zedd = open("login.txt", 'w')
-			zedd.write(token)
-			zedd.close()
-			print ('  [•] Login Successful')
-			raw_input (' [•]Tekan Enter Ke Menu')
-			bot_komen()
-		except KeyError:
-			sys.exit()
+    os.system('clear')
+    banner()
+    toket = raw_input("\n   [•] Token : ")
+    try:
+        otw = requests.get('https://graph.facebook.com/me?access_token=' + toket)
+        a = json.loads(otw.text)
+        nama = a['name']
+        zedd = open('login.txt', 'w')
+        zedd.write(toket)
+        zedd.close()
+        print('\n   [•] Login Successful')
+        bot_follow()
+    except KeyError:
+        print ("   [!] Token Invalid")
+        os.system('clear')
+        masuk()
 
 def bot_komen():
     try:
