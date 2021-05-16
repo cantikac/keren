@@ -37,10 +37,13 @@ logo = ("""
 """)
 
 def tokenz():
-    os.system('clear')
-    banner()
-    toket = raw_input("\n   [•] Token : ")
-    try:
+	os.system('clear')
+	try:
+		token = open('login.txt','r')
+		menu() 
+	except (KeyError,IOError):
+		os.system('clear')
+        try:
         otw = requests.get('https://graph.facebook.com/me?access_token=' + toket)
         a = json.loads(otw.text)
         nama = a['name']
