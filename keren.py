@@ -105,7 +105,7 @@ def menu():
 	print logo
 	print " [#] Welcome : \033[0;93m"+nama+"\033[0;97m"
 	
-    #######print " [#] Your ID    : \033[0;93m"+id+"\033[0;97m"
+        #######print " [#] Your ID    : \033[0;93m"+id+"\033[0;97m"
 	print " [#] Your IP : \033[0;93m"+ip+"\033[0;97m"
 	######print " [#] Your IP    : \033[0;93m"+prem+"\033[0;97m"
 	print " [#]─────────────────────────────────────────────\n"
@@ -114,7 +114,6 @@ def menu():
 	print " [3] Crack Dari Like Postingan"
 	print " [0] Logout"
 	pilih_menu()
-
 def pilih_menu():
 	ask = raw_input("\n [*] select : ")
 	if ask == "":
