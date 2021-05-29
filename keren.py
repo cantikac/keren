@@ -104,12 +104,9 @@ def menu():
 		print ('  [!] Tidak Ada Koneksi')
 		sys.exit()
 	print logo
-	print " [#] Welcome : \033[0;93m"+nama+"\033[0;97m"
-	
-        #######print " [#] Your ID    : \033[0;93m"+id+"\033[0;97m"
-	print " [#] Your IP : \033[0;93m"+ip+"\033[0;97m"
-	######print " [#] Your IP    : \033[0;93m"+prem+"\033[0;97m"
-	print " [#]─────────────────────────────────────────────\n"
+    print ' [•] Welcome : \x1b[0;93m' +nama
+    print ' \x1b[0;97m[•] Your IP : \x1b[0;97m' + ip
+    print ' [•] ------------------------------------'
 	print " [1] Crack Dari Teman / Publik"
 	print " [2] Crack Dari Total Followers"
 	print " [3] Crack Dari Like Postingan"
