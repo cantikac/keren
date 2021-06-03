@@ -34,7 +34,7 @@ logo="""
                       \/       \/     \/    
   Code By   : Defil  exploit id
   My Github : github.com/Iwanhadiansahxd
- <======================================>                     
+\033[0;92m <======================================>                     
 """
 
 def tokenz():
